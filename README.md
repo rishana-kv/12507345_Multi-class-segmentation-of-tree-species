@@ -71,7 +71,7 @@ To ensure reproducibility, the following are provided:
 ### Time spent
 - Data preparation (data download, QGIS labeling, fixing shapefile issues): 15-16 hours  
 - Dataset pipeline (tiling, mask generation, splits, debugging): 8 hours  
-- Model and training pipeline (implementation, experiments, tuning, reducing to five classes): 15 hours  
+- Model and training pipeline (implementation, experiments, tuning, reducing to five classes): 15-24 hours  
 - Documentation and submission preparation: 4 hours  
 
 ### Limitations and future work
