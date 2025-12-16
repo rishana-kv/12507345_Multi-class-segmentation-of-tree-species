@@ -22,7 +22,7 @@ Based on this dataset, I then implemented a separate model training pipeline in 
 ### Exploration and experiments
 The initial setup had six classes, including locusts. But the mean intersection over union (IoU) dropped below the target threshold of 0.40, even though I tried albumentation first with 20 epochs and then with 30 epochs with data augmentation. 
 
-To improve robustness and performance, the setup was simplified to five classes (Background (class 0)  Beech (class 1)  Pine (class 2)  Birch (class 3)  Spruce (class 4)) and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores, which are reported in the final results (`results/metrics.txt`).the final model was trained for 30 epochs, selected based on the training and validation loss curves  
+To improve robustness and performance, the setup was simplified to five classes (Background (class 0)  Beech (class 1)  Pine (class 2)  Birch (class 3)  Spruce (class 4)) and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores (`results/metrics.txt`).the final model was trained for 30 epochs, selected based on the training and validation loss curves  
 
 Summary of experiments:  
 - With 6 classes and no augmentation, the Mean IoU on the test set was approximately 0.20, clearly below the 0.40 target.
