@@ -48,6 +48,8 @@ Although not all classes reach the target IoU individually, the model performs s
 Qualitative predictions were generated for selected test tiles. For each example, a single combined figure visualises the input RGB image, the ground‑truth semantic mask and the predicted semantic mask. All qualitative outputs are stored in the `results/` folder.
 Each prediction uses a consistent colour legend that maps mask colours to tree species. Visual inspection reveals that the model learns coherent crown shapes and spatial boundaries.  
 
+<img width="2250" height="3750" alt="combined_test_images" src="https://github.com/user-attachments/assets/d8b5ffe6-6089-4fe9-913e-8d2b337aaccc" />
+
 ### Training behavior
 The training and validation loss curves (`results/loss_curve.png`) show stable convergence over 30 epochs without severe overfitting. Training was performed on CPU, resulting in longer training times but consistent optimisation behaviour,the total training time for the final model was approximately 316 minutes.
 
