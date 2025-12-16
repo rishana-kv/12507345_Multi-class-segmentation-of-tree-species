@@ -18,6 +18,11 @@ The initial setup included six tree species (including locust). However, several
 
 To improve robustness and performance, the setup was simplified to five species and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores, which are reported in the final results (`results/metrics.txt`).  
 
+- With 6 species and no augmentation, the Mean IoU on the test set was approximately 0.36, clearly below the 0.40 target.  
+- After adding data augmentation with Albumentations, the Mean IoU remained at a similar level and did not significantly improve.  
+- After reducing the task to 5 species and regenerating the dataset, the Mean IoU improved to … (final result reported in `results/metrics.txt`).
+
+
 ### Metrics and evaluation
 - **Error metrics:** Mean Intersection over Union (IoU) per class and Mean Dice coefficient per class on the test set.  
 - **Evaluation protocol:** Metrics computed on a held‑out test set that was never used for training or validation.  
