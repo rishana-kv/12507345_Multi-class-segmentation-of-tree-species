@@ -74,8 +74,6 @@ To ensure reproducibility, the following are provided:
 - Model and training pipeline (implementation, experiments, tuning, reducing to five classes): 15-24 hours  
 - Documentation and submission preparation: 4 hours  
 
-### Limitations and future work
-- The dataset is relatively small and was labelled manually, which limits its generalisation. In future, collecting more orthomosaics from different plots, seasons and imaging conditions would enable a more robust model to be trained.
-- There is noticeable class imbalance between species, which affects per‑class IoU; future work could apply class‑weighted losses or targeted data collection.  
+### future work 
 - Currently, the model operates on fixed-size tiles and does not perform full-scene inference on the complete orthomosaic. The next step is to apply the trained model to the entire orthomosaic using a sliding window/fully convolutional approach, followed by post-processing to merge crowns and evaluate the results at stand level. If time allows, this extension will also be included in the final report.
 
