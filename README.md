@@ -6,11 +6,11 @@ The project mainly focuses on distinguishing multiple tree species from UAV orth
 ### What I implemented
 I downloaded high‑resolution orthomosaic data from Zenodo(https://zenodo.org/records/15168163) and manually created tree crown polygons for multiple tree species using QGIS (https://qgis.org/project/overview/). This required learning QGIS , resolving shapefile issues, and carefully delineating individual tree crowns per species.  I used the polygons available from the data itself for some spruce trees and drew others myself.
 
-Total number of tree crowns dilineated:-
--Beech :81 polygons
--Pine :138 polygons
--Birch :2 polygons
--Spruce :202 polygons
+Total number of tree crowns delineated (polygons):
+- Beech: 81 polygons  
+- Pine: 138 polygons  
+- Birch: 2 polygons  
+- Spruce: 202 polygons  
 
 Based on these , I implemented a complete data set pipeline that (see `dataset_pipeline` folder):-
 - Tiles the orthomosaic into fixed-size image patches,    
