@@ -65,10 +65,10 @@ To ensure reproducibility, the following are provided:
 - All paths and file names in the code correspond to the dataset and result files referenced above.  
 
 ### Time spent
-- Data preparation (data download, QGIS labeling, fixing shapefile issues): X hours  
-- Dataset pipeline (tiling, mask generation, splits, debugging): Y hours  
-- Model and training pipeline (implementation, experiments, tuning, reducing to five species): Z hours  
-- Documentation, repository cleanup, and submission preparation: W hours  
+- Data preparation (data download, QGIS labeling, fixing shapefile issues): 15-16 hours  
+- Dataset pipeline (tiling, mask generation, splits, debugging): 8 hours  
+- Model and training pipeline (implementation, experiments, tuning, reducing to five species): 15 hours  
+- Documentation, repository cleanup, and submission preparation: 4 hours  
 
 ### Limitations and future work
 - The dataset is relatively small and was labelled manually, which limits its generalisation. In future, collecting more orthomosaics from different plots, seasons and imaging conditions would enable a more robust model to be trained.
