@@ -13,7 +13,7 @@ Based on these , I implemented a complete data set pipeline that :-
 
 Based on this dataset, I then implemented a separate model training pipeline in PyTorch. This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a held-out test set, computation of IoU and Dice metrics, and visualization of qualitative predictions.
 
-### Short project story
+### Exploration and experiments
 The initial setup included six tree species (including locust). However, several classes achieved a Mean IoU well below the target threshold of 0.40, even after experimenting with data augmentation using Albumentations.  
 
 To improve robustness and performance, the setup was simplified to five species and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores, which are reported in the final results (`results/metrics.txt`).  
