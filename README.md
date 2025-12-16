@@ -57,16 +57,13 @@ The training and validation loss curves (`results/loss_curve.png`) show stable c
 The repository contains the following artifacts:
 
 - **Trained model weights:**  
-  - `results/unet_model_final.pth`  
-
+  `results/unet_model_final.pth`  
 - **Training diagnostics:**  
-  - training vs. validation loss curve: `results/loss_curve.png`  
-
+  training vs. validation loss curve: `results/loss_curve.png`  
 - **Quantitative evaluation:**  
-  - per‑class IoU and Dice scores on the test set: `results/metrics.txt`  
-
+  per‑class IoU and Dice scores on the test set: `results/metrics.txt`  
 - **Qualitative predictions:**  
-  - side‑by‑side visualizations of image, ground truth and prediction: `results/*.png`  
+  side‑by‑side visualizations of image, ground truth and prediction: `results/*.png`  
 
 ### Reproducibility and data access
 To ensure reproducibility, the following are provided:  
