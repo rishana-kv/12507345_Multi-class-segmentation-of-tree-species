@@ -17,7 +17,7 @@ Based on these , I implemented a complete data set pipeline that (see `dataset_p
 - rasterises species-specific crown polygons into semantic segmentation masks, and  
 - automatically splits the data into training (70%), validation(15%), and test sets(15%).  
 
-Based on this dataset, I then implemented a separate model training pipeline in PyTorch (see `model_training_pipeline` folder). This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a test set, computation of IoU and Dice metrics, and visualization of predictions.
+Based on this dataset, I then implemented a separate model training pipeline in PyTorch (see `model_training_pipeline` folder). This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a test set, computation of intersection over union (IoU) and Dice metrics, and visualization of predictions.
 
 ### Exploration and experiments
 The initial setup included six classes, including locusts. However, the mean intersection over union (IoU) fell below the target threshold of 0.40, despite experimenting with data augmentation using Albumentations, firstly with 20 epochs and then with 30 epochs. 
