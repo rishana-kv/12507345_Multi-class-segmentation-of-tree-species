@@ -4,7 +4,7 @@ The project mainly focuses on distinguishing multiple tree species from UAV orth
 ## Exercise 2 – Hacking
 
 ### What I implemented
-I downloaded high‑resolution orthomosaic data from Zenodo and manually created tree crown polygons for multiple tree species using QGIS. This required learning QGIS, resolving shapefile issues, and carefully delineating individual tree crowns per species.  
+I downloaded high‑resolution orthomosaic data from Zenodo(https://zenodo.org/records/15168163) and manually created tree crown polygons for multiple tree species using QGIS. This required learning QGIS(https://qgis.org/project/overview/), resolving shapefile issues, and carefully delineating individual tree crowns per species.  
 
 Based on these annotations, I implemented a complete dataset pipeline that  
 - tiles the orthomosaic into fixed‑size image patches,  
