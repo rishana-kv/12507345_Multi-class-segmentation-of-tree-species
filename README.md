@@ -54,7 +54,7 @@ Qualitative predictions were generated for selected test tiles.
 The training and validation loss curves (`results/loss_curve.png`) show stable convergence over 30 epochs without severe overfitting. Training was performed on CPU, resulting in longer training times but consistent optimisation behaviour,the total training time for the final model was approximately 316 minutes.
 
 ### Deliverables
-The repository contains the following artifacts:
+The repository contains the following:
 
 - **Trained model weights:**  
   `results/unet_model_final.pth`  
