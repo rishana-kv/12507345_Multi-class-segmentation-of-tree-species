@@ -27,7 +27,7 @@ To improve robustness and performance, the setup was simplified to five classes 
 Summary of experiments:  
 - With 6 classes and no augmentation, the Mean IoU on the test set was approximately 0.20, clearly below the 0.40 target.
 - 6 classes, with Albumentations: No significant improvement.  
-- After reducing the task to 5 classes and regenerating the dataset, clear improvement in Mean IoU and Dice scores (final result reported in `results/metrics.txt`). Here also I tried first with 20 epochs and then 30 epoch according to the training and validation loss curve.
+- After reducing the task to 5 classes and regenerating the dataset, clear improvement in Mean IoU and Dice scores. see below sections
 
 
 ### Metrics and evaluation
