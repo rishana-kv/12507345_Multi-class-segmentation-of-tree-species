@@ -6,21 +6,21 @@ The project mainly focuses on distinguishing multiple tree species from UAV orth
 ### What I implemented
 I downloaded high‑resolution orthomosaic data from Zenodo(https://zenodo.org/records/15168163) and manually created tree crown polygons for multiple tree species using QGIS (https://qgis.org/project/overview/). This required learning QGIS , resolving shapefile issues, and carefully delineating individual tree crowns per species.  I used the polygons available from the data itself for some spruce trees and drew others myself.
 
-Based on these , I implemented a complete data set pipeline that :-
+Based on these , I implemented a complete data set pipeline that (see dataset_pipeline folder):-
 - Tiles the orthomosaic into fixed-size image patches,    
 - rasterises species-specific crown polygons into semantic segmentation masks, and  
 - automatically splits the data into training, validation, and test sets.  
 
-Based on this dataset, I then implemented a separate model training pipeline in PyTorch. This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a held-out test set, computation of IoU and Dice metrics, and visualization of qualitative predictions.
+Based on this dataset, I then implemented a separate model training pipeline in PyTorch (see model_training_pipeline folder). This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a held-out test set, computation of IoU and Dice metrics, and visualization of qualitative predictions.
 
 ### Exploration and experiments
-The initial setup included six tree species (including locust). However, several classes achieved a Mean IoU well below the target threshold of 0.40, even after experimenting with data augmentation using Albumentations.  
+The initial setup included six classes (including locust). However, several classes achieved a Mean IoU well below the target threshold of 0.40, even after experimenting with data augmentation using Albumentations.  
 
-To improve robustness and performance, the setup was simplified to five species and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores, which are reported in the final results (`results/metrics.txt`).  
+To improve robustness and performance, the setup was simplified to five classes (Background (class 0)  Beech (class 1)  Pine (class 2)  Birch (class 3)  Spruce (class 4)) and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores, which are reported in the final results (`results/metrics.txt`).  
 
-- With 6 species and no augmentation, the Mean IoU on the test set was approximately 0.36, clearly below the 0.40 target.  
+- With 6 classes and no augmentation, the Mean IoU on the test set was approximately 0.36, clearly below the 0.40 target.  
 - After adding data augmentation with Albumentations, the Mean IoU remained at a similar level and did not significantly improve.  
-- After reducing the task to 5 species and regenerating the dataset, the Mean IoU improved to … (final result reported in `results/metrics.txt`).
+- After reducing the task to 5 classes and regenerating the dataset, the Mean IoU improved to … (final result reported in `results/metrics.txt`).
 
 
 ### Metrics and evaluation
