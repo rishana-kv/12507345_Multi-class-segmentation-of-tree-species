@@ -65,8 +65,8 @@ To ensure reproducibility, the following are provided:
 - Model and training pipeline (implementation, experiments, tuning, reducing to five species): Z hours  
 - Documentation, repository cleanup, and submission preparation: W hours  
 
-### Limitations
-- The dataset is relatively small and manually labeled, which limits generalization.  
-- Class imbalance between tree species likely affects per‑class IoU.  
-- The model operates on fixed‑size tiles and does not perform full‑scene inference on the complete orthomosaic.  
+### Limitations and future work
+- The dataset is relatively small and was labelled manually, which limits its generalisation. In future, collecting more orthomosaics from different plots, seasons and imaging conditions would enable a more robust model to be trained.
+- There is a class imbalance between tree species, which likely affects per-class IoU. This could be mitigated in future by collecting targeted data for under-represented species and using class-balancing techniques such as weighted losses or oversampling.  
+- Currently, the model operates on fixed-size tiles and does not perform full-scene inference on the complete orthomosaic. The next step is to apply the trained model to the entire orthomosaic using a sliding window/fully convolutional approach, followed by post-processing to merge crowns and evaluate the results at stand level. If time allows, this extension will also be included in the final report.
 
