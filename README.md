@@ -14,7 +14,7 @@ The project mainly focuses on distinguishing multiple tree species from UAV orth
 - Achieved: Mean IoU = …, Mean Dice = … (from `results/metrics.txt`).
 
 ### Time spent
-- Data preparation (download, QGIS, tiling): 6 hours  
+- Data preparation (download, QGIS, tiling): 16 hours  
 - Model & training pipeline implementation: Y hours  
 - Experiments / tuning: 5 hours  
 - Documentation & cleanup: 2 hours
