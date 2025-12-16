@@ -37,8 +37,8 @@ Summary of experiments:
 
 **Achieved results (test set):**  
 - Mean IoU per class:
-- `[background,Beech,Pine,Birch,Spruce]`
-  `[0.9197, 0.1472, 0.7517, 0.0019, 0.5711]`  
+ `[background,Beech,Pine,Birch,Spruce]`
+- `[0.9197, 0.1472, 0.7517, 0.0019, 0.5711]`  
 - Mean Dice per class:  
   `[0.9580, 0.2443, 0.8569, 0.0038, 0.7125]`
   
