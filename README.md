@@ -4,14 +4,14 @@ The project mainly focuses on distinguishing multiple tree species from UAV orth
 ## Exercise 2 – Hacking
 
 ### What I implemented
-I downloaded high‑resolution orthomosaic data from Zenodo(https://zenodo.org/records/15168163) and manually created tree crown polygons for multiple tree species using QGIS. This required learning QGIS(https://qgis.org/project/overview/), resolving shapefile issues, and carefully delineating individual tree crowns per species.  
+I downloaded high‑resolution orthomosaic data from Zenodo(https://zenodo.org/records/15168163) and manually created tree crown polygons for multiple tree species using QGIS. This required learning QGIS (https://qgis.org/project/overview/), resolving shapefile issues, and carefully delineating individual tree crowns per species.  I used the polygons available from the data itself for some spruce trees and drew others myself.
 
-Based on these annotations, I implemented a complete dataset pipeline that  
-- tiles the orthomosaic into fixed‑size image patches,  
-- rasterizes species‑specific crown polygons into semantic segmentation masks, and  
+Based on these , I implemented a complete data set pipeline that :-
+- Tiles the orthomosaic into fixed-size image patches,    
+- rasterises species-specific crown polygons into semantic segmentation masks, and  
 - automatically splits the data into training, validation, and test sets.  
 
-On top of this dataset, I implemented a small U‑Net–based semantic segmentation model in PyTorch. The training pipeline includes data loading, training, validation, testing, metric computation, and visualization of qualitative predictions.  
+Based on this dataset, I then implemented a separate model training pipeline in PyTorch. This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a held-out test set, computation of IoU and Dice metrics, and visualization of qualitative predictions.
 
 ### Short project story
 The initial setup included six tree species (including locust). However, several classes achieved a Mean IoU well below the target threshold of 0.40, even after experimenting with data augmentation using Albumentations.  
