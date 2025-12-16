@@ -74,6 +74,6 @@ To ensure reproducibility, the following are provided:
 - Model and training pipeline (implementation, experiments, tuning, reducing to five classes): 15-24 hours  
 - Documentation and submission preparation: 4 hours  
 
-### future work 
+### Future work 
 Currently, the model operates on fixed-size tiles and does not perform full-scene inference on the complete orthomosaic. The next step is to apply the trained model to the entire orthomosaic using a sliding window/fully convolutional approach, followed by post-processing to merge crowns and evaluate the results at stand level. If time allows, this extension will also be included in the final report.
 
