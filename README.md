@@ -1,4 +1,4 @@
-<img width="2250" height="3750" alt="combined_test_images" src="https://github.com/user-attachments/assets/d8b5ffe6-6089-4fe9-913e-8d2b337aaccc" /># 12507345_Multi-class-segmentation-of-tree-species
+# 12507345_Multi-class-segmentation-of-tree-species
 The project mainly focuses on distinguishing multiple tree species from UAV orthophotos using a convolutional neural network (CNN) architecture, specifically the U-Net model.
 
 ## Exercise 2 – Hacking
