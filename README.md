@@ -46,8 +46,7 @@ Summary of experiments:
 Although not all classes reach the target IoU individually, the model performs strongly for several species.Per‑image and per‑class metrics are reported in `results/metrics.txt`.  
 
 ### Qualitative results
-Qualitative predictions were generated for selected test tiles. For each example, a single combined figure visualises the input RGB image, the ground‑truth semantic mask and the predicted semantic mask. All qualitative outputs are stored in the `results/` folder.
-Each prediction uses a consistent colour legend that maps mask colours to tree species. Visual inspection reveals that the model learns coherent crown shapes and spatial boundaries.  
+Qualitative predictions were generated for selected test tiles.
 
 <img width="2250" height="3750" alt="combined_test_images" src="https://github.com/user-attachments/assets/d8b5ffe6-6089-4fe9-913e-8d2b337aaccc" />
 
