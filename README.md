@@ -14,13 +14,13 @@ Based on these , I implemented a complete data set pipeline that (see `dataset_p
 Based on this dataset, I then implemented a separate model training pipeline in PyTorch (see `model_training_pipeline` folder). This pipeline includes a small U-Net–based semantic segmentation model, data loading , a full training and validation loop, evaluation on a held-out test set, computation of IoU and Dice metrics, and visualization of qualitative predictions.
 
 ### Exploration and experiments
-The initial setup included six classes (including locust). However, several classes achieved a Mean IoU well below the target threshold of 0.40, even after experimenting with data augmentation using Albumentations.  
+The initial setup included six classes (including locust). However, several classes achieved a Mean IoU well below the target threshold of 0.40, even after experimenting with data augmentation using Albumentations. firstly tried with 20 epochs and then 30 epochs. 
 
 To improve robustness and performance, the setup was simplified to five classes (Background (class 0)  Beech (class 1)  Pine (class 2)  Birch (class 3)  Spruce (class 4)) and the dataset was regenerated accordingly. This reduced class confusion and led to improved and more stable Mean IoU and Dice scores, which are reported in the final results (`results/metrics.txt`).  
 
 - With 6 classes and no augmentation, the Mean IoU on the test set was approximately 0.36, clearly below the 0.40 target.  
 - After adding data augmentation with Albumentations, the Mean IoU remained at a similar level and did not significantly improve.  
-- After reducing the task to 5 classes and regenerating the dataset, the Mean IoU improved to … (final result reported in `results/metrics.txt`).
+- After reducing the task to 5 classes and regenerating the dataset, the Mean IoU improved to … (final result reported in `results/metrics.txt`). Here also I tried first with 20 epochs and then 30 epoch according to the training and validation loss curve.
 
 
 ### Metrics and evaluation
