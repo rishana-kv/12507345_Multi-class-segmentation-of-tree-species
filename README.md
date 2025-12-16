@@ -62,8 +62,6 @@ The repository contains the following:
   training vs. validation loss curve: `results/loss_curve.png`  
 - **Quantitative evaluation:**  
   per‑class IoU and Dice scores on the test set: `results/metrics.txt`  
-- **Qualitative predictions:**  
-  side‑by‑side visualizations of image, ground truth and prediction: `results/*.png`  
 
 ### Reproducibility and data access
 To ensure reproducibility, the following are provided:  
